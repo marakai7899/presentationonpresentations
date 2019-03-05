@@ -14,15 +14,6 @@
 		<link rel="stylesheet" href="css/custom.css">
 	
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-
 <style>
 
 body {
@@ -90,6 +81,7 @@ font-family: 'M PLUS Rounded 1c', sans-serif;
       line-height:0px;	
            text-transform:capitalize !important;
            text-align:center;		
+                    color:#42affa; 
 }
 
 .reveal h6 {
@@ -115,7 +107,6 @@ font-family: 'M PLUS Rounded 1c', sans-serif;
 .col-1 {
 float:left;
 width:30%;	
-margin-top:10%;
 margin-top:10% !important;
 }
 
@@ -143,8 +134,7 @@ position:absolute;
 text-align:left;	
 }
 
-.reveal .three h1 {
-color:white;	
+.reveal .three h1 {	
  margin:40px 0px;
  line-height:10px;
 }
@@ -169,9 +159,6 @@ line-height:1.6em;
 text-transform:none !important;
 }
 
-.reveal .eight h1, .reveal .ten h1, .reveal .twelve h1, .reveal .fourteen h1, .reveal .sixteen h1 {
-color:white;	
-}
 
 .reveal strong {
 color:#fa5442;
@@ -187,6 +174,52 @@ details summary::-webkit-details-marker {
   display:none;
 }
 
+.reveal section {
+max-width:70%;
+margin:0% 15%;
+}
+
+@media only screen and (max-width: 600px) {
+
+
+.reveal iframe {
+max-width:100%;	
+}
+
+.reveal h1 {
+font-size:2.6rem;	
+}
+
+.reveal h4 {
+font-size:1.2rem;	
+}
+
+.col-1, .col-2 {
+display:block;	
+width:100%;	
+margin:0px !important;
+}
+
+.reveal article {
+margin:0px 0px 0px 0px;	
+padding:0px;
+}
+
+.reveal .four ul li, .reveal .nine ul li, .reveal .eleven ul li, .reveal .thirteen ul li, .reveal .fifteen ul li, .reveal .seventeen ul li, .reveal .nineteen ul li, .twentyone ul li {
+margin:0px;font-size:1.2rem;
+ text-align:left;
+margin:15px; 
+line-height:1.6em;          	
+}
+
+svg {
+    max-width:25%;
+    height:auto;
+}
+
+
+
+}
 
 
 
@@ -205,26 +238,42 @@ details summary::-webkit-details-marker {
 				<h2>WHY USE WEB FRAMEWORKS?</h2>	
 				<div class="col-1">
 				<article>
-						<h3><span>RE</span>USABILITY</h3>
+					<details class="featuresList">
+						<summary><h3>REUSABILITY</h3></summary>
 						<h6>Content including markup, stylesheets, scripts and images can easily be copied to blog posts, web pages and presentations </h6>
+					</details>	
 				</article>
 				<article>
-						<h3><span>UBIQ</span>UITY</h3>
+					<details class="featuresList" >
+						<summary><h3>UBIQUITY</h3></summary>
 						<h6>Files can be stored on Github and accessed on any device with an internet connection at any time.</h6>
+					</details>	
 				</article>
-				<article><h3><span>SCALA</span>BILITY</h3>
+				<article>
+					<details class="featuresList">
+						<summary><h3>SCALABILITY</h3></summary>
 						<h6>API's can be used to add all kinds of cool features, such as real time updates or content on the fly</h6>
+					</details>	
 						</article>
 							</div>
 								<div class="col-2">
-				<article><h3><span>EFFIC</span>IENCY</h3>
+				<article>
+					<details class="featuresList">
+						<summary><h3>EFFICIENCY</h3></summary>
 						<h6>Web frameworks reduce the time spent on formatting images and fonts. Moreover, they do not require any software other than a web browser. </h6>
+					</details>	
 				</article>
-				<article><h3><span>RESPONS</span>IVENESS</h3>
+				<article>
+					<details class="featuresList">
+						<summary><h3>RESPONSIVENESS</h3></summary>
 						<h6>Presentations can be accessed on any device without compromising usability or aesthetics</h6>
+					</details>	
 				</article>
-				<article><h3><span>ATTRACTIVE</span>NESS</h3>
+				<article>
+					<details class="featuresList">
+					<summary><h3>ATTRACTIVENESS</h3></summary>
 						<h6>Attractive, full screen images can be used and made responsive across different devices.</h6>
+					</details>	
 				</article>
 			</div>
 		</section>
@@ -473,13 +522,38 @@ details summary::-webkit-details-marker {
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
+			width:"100%",
+			height:"100%",
+			margin:0,
+			minScale:1,
+			maxScale:1
 			});
 		</script>
+
+		<script>
+function myFunction() {
+  document.getElementById("featuresList").open = true;
+}
+		</script>
+
+		      <script type="text/javascript"  >
+function myFunction(x) {
+
+  var boxes = document.getElementsByClassName('featuresList'),
+        i = boxes.length;
+
+  if (x.matches) { // If media query matches
+
+    while(i--) {
+        boxes[i].open = true;
+    	}
+	}
+}
+
+var x = window.matchMedia("(min-width: 700px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+</script>
+
 	</body>
 </html>
