@@ -171,7 +171,7 @@ details summary {
 }
 
 details summary::-webkit-details-marker {
-  display:none;
+float:left;
 }
 
 .reveal section {
@@ -179,8 +179,23 @@ max-width:70%;
 margin:0% 15%;
 }
 
+.reveal iframe {
+max-width:100%;
+max-height:50vh;
+}
+
+
+
 @media only screen and (max-width: 600px) {
 
+.reveal iframe {
+max-width:100%;
+max-height:70vh;
+}	
+
+.reveal ul li {
+list-style-type:none;
+}
 
 .reveal iframe {
 max-width:100%;	
@@ -206,7 +221,8 @@ padding:0px;
 }
 
 .reveal .four ul li, .reveal .nine ul li, .reveal .eleven ul li, .reveal .thirteen ul li, .reveal .fifteen ul li, .reveal .seventeen ul li, .reveal .nineteen ul li, .twentyone ul li {
-margin:0px;font-size:0.9375rem;
+margin:0px;
+font-size:3vw;
  text-align:left;
 margin:15px; 
 line-height:1.6em;          	
@@ -219,9 +235,9 @@ svg {
 
 .two h2 {
 font-size:1.1rem;
-margin-right:10%;
+margin-right:20%;
 margin-top:25%;
-margin-left:60%;
+margin-left:50%;
 font-weight:400;
 line-height:2rem;
 text-align:center;		
@@ -231,10 +247,21 @@ text-align:center;
 line-height:1.2rem;	
 }
 
+.reveal section {
+max-width:80%;
+margin:0% 10%;
+}
+
+.reveal p {
+font-size:3.5vw;	
+}
+
+.reveal .featuresList {
+max-width:50%;	
+}
 
 
 }
-
 
 
 </style>
@@ -306,7 +333,7 @@ line-height:1.2rem;
 	c7.914,10.805,15.046,22.125,21.691,33.749c0.978,1.711,1.699,1.858,3.383,0.833c11.923-7.273,23.917-14.43,35.89-21.622
 	C286.632,114.121,286.989,113.829,287.927,114.055z"/>
 </svg>
-			<h1><span>RE</span>USABILITY</h1>
+			<h1>REUSABILITY</h1>
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
 <path fill-rule="evenodd" clip-rule="evenodd" fill="#42affa" d="M25,189.267c1.688-4.098,3.284-8.069,4.952-12.004
@@ -326,32 +353,33 @@ line-height:1.2rem;
 					<ul>
 						<li>
 						<details>
-							<summary>Content can be reused across <strong>different mediums</strong> including blog posts and newsletters.</summary>
+							<summary>Content can be reused across <strong>different mediums</strong></summary>
+							<p>This includes blogs, newsletters, web pages and more</p>
 						</details>
 							</li>	
 						<li>
 						<details>
 						<summary>No need to download <strong>fonts</strong></summary>	
-						<p>Unlike MS Powerpoint <strong>fonts do not need to be downloaded</strong> on each individual device in order to be rendered correctly. They can be served over the internet.
+						<p>Unlike MS Powerpoint fonts do not need to be downloaded on each individual device in order to be rendered correctly. They can be served over the internet.
 						</p>
 						</li>
 						<li>
 						<details>
 						<summary>Stylesheets can be <strong>served from the internet</strong></summary>	
-						<p>Stylesheets can also be served from the internet so there is <strong>no need to copy color codes and other styles.</strong>
+						<p>Stylesheets can also be served from the internet so there is no need to copy color codes and other styles.
 						</p>
 					</details>
 						</li>
 						<li>
 						<details>
 						<summary>No need to <strong>format headings</strong></summary>	
-						<p>No need to <strong>format headings</strong> as the copied content will already be formatted</p>
+						<p>No need to format headings as the copied content will already be formatted</p>
 					</details>
 						</li>
 						<li>
 						<details>	
 						<summary><strong>Semantic elements</strong> like tables are pre-formatted</summary>	
-						<strong>Semantic elements like tables, paragraphs, captions and other elements </strong> are pre-defined and formatted
+							<p>Semantic elements like tables, paragraphs, captions and other elements are pre-defined and formatted</p>
 					</details>
 						</li>
 						<li>
@@ -371,137 +399,171 @@ line-height:1.2rem;
 				<p>The process of transferring the list from the presentation to the write-up on my website took <strong>only a few seconds</strong> with no need to format the content.</p>
 				</section>
 				<section class="eight">
-					<h1><span>UBIQ</span>UITY</h1>
+					<h1>UBIQUITY</h1>
 				</section>	
 				<section class="nine">
 				<ul>
-				<li>Projects are <strong>available 24x7</strong> on the internet through GitHub or other web hosts</li>
-				<li>If users choose to host on GitHub they can <strong>track changes</strong> and access previous versions</li>	
-				<li>Nearly every web browser can access them so they are not <strong>dependant on a particular operating system</strong> or platform</li>
-				<li>Users can ensure that properly coded projects will look <strong>nearly uniform</strong> across multiple devices and multiple browsers</li>
-				<li>No need for <strong>on premise hard drives</strong> or other storage devices</li>
-				<li>Presenters can make sure that they are accessing <strong>the most recent version</strong> of the presentation</li>
+				<li>
+					<details>
+				<summary>Projects are <strong>available 24x7</strong></summary>
+				<p>Projects are available on the internet through GitHub or other web hosts</p>
+					</details>
+					</li>
+				<li>
+					<details>
+					<summary><strong>Track</strong> changes</summary>
+					<p>If users choose to host on GitHub they can track changes and access previous versions</p>
+					</details>
+					</li>	
+				<li>
+					<details>
+					<summary>Not <strong>platform-dependent</strong></summary>	
+					<p>Nearly every web browser can access them so they are not <strong>dependant on a particular operating system</strong> or platform
+					</p></li>
+				<li>
+					<details>
+						<summary>Projects can look nearly <strong>uniform</strong> across devices</summary>
+					<p>Users can ensure that properly coded projects will look <strong>nearly uniform</strong> across multiple devices and multiple browsers
+					</p>
+				</details>
+				</li>
+				<li><details>
+					<summary>No need for <strong>on premise hard drives</strong> or other storage devices</summary>
+					</li>
+				<li>
+					<details>
+						<summary>Access <strong>most recent version</strong> of the project</summary>
+					Presenters can make sure that they are accessing the most recent version of the presentation
+				</details>
+				</li>
 				</ul>	
 				</section>
 				<section class="ten">
-				<h1><span>SCALA</span>BILITY</h1>	
+				<h1>SCALABILITY</h1>	
 				</section>	
 				<section class="eleven">
 				<ul>
 				<li>
-					<details closed>
+					<details>
   						<summary>Presentations need to <strong>grow and evolve
-  						</strong> with disruptive technologies</summary>
+  						</strong> with emerging technologies</summary>
  							<p>The web is going to get disrupted very soon by the arrival of artificial intelligence, internet of things, virtual reality and more. Presentations need to grow and evolve with these developments</p>
 					</details>
 				</li>	
 					<li>
-					<details closed>
-  						<summary>Web frameworks can make use of <strong>innovative technologies</strong> such as virtual reality and integrate with social media</summary>
+					<details>
+  						<summary>Use <strong>interactive features</strong>including VR and live social media updates</summary>
  							<p>Very few presentations, even the ones that present on technology, use virtual reality or high degrees of user engagement. Web frameworks which can integrate with nearly all technology can be scaled up to achieve features like displaying live tweets.</p>
 					</details>
 				</li>	
 					<li>
-					<details closed>
-  						<summary>RevealJS itself is being <strong>extended to fit user needs</strong> for example Alley Interactive developed a Wordpress theme</summary>
+					<details>
+  						<summary>Technology <strong>extends to fit user needs</strong></summary>
  							<p>I love Wordpress. Everybody should love Wordpress. There is in fact an option to use a Wordpress theme built with RevealJS by the team at Alley Interactive. I am optimistic that in time more plugins and related frameworks will be developed.</p>
 					</details>
 				</li>	
 					<li>
-					<details closed>
-  						<summary>Nearly all <strong>third party integrations are compatible</strong> with web frameworks</summary>
+					<details>
+  						<summary>Nearly all <strong>third party integrations are compatible</strong></summary>
  							<p>There is no limit on the number of third party integrations or functionality that can be added as it is only a matter of scaling up a web host plan.</p>
 					</details>
 				</li>	
 						<li>
-					<details closed>
-  						<summary>Increased use of web frameworks with <strong>incentivise developers</strong> to continue to use it</summary>
+					<details>
+  						<summary>Increased use will <strong>incentivise developers</strong> to develop this further</summary>
  							<p> The more users use open source presentations based on web frameworks, the higher the chances that developers in open source communities will maintain and update frameworks.</p>
 					</details>
 				</li>	
 				</ul>
 				</section>	
 				<section class="twelve">
-						<h1><span>EFFIC</span>IENCY</h1>
+						<h1>EFFICIENCY</h1>
 				</section>	
 				<section class="thirteen">
 				<ul>
 					<li>
-						<details closed>
+						<details>
 							<summary>Fonts, stylesheets and transitions are pre-rendered for<strong> collaborative efficiency</strong></summary>
 							<p>If there is one thing I have to swear by it is the efficiency of web based open source presentations. Fonts, styling and transitions are pre-rendered which reduces the need for content creators and designers to struggle with the less rewarding aspects of presentations.</p>
 						</details>	
 					</li>	
 					<li>
-						<details closed>
+						<details>
 							<summary><strong>Developer satisfaction</strong> in writing broad multi-purpose functionality</summary>
 							<p>Developers also focus on modern programming challenges rather than trying to find hacks for proprietary software. Carefully selected web hosting plans can ensure that  web based presentations are allocated only the percentage of computing power that they need with options to scale up as per requirement (elasticity)</p>
 					</li>
  					<li>
- 						<details closed>
- 							<summary>Reduces <strong>need for single-use hardware</strong> such a purchasing a pendrive just to store a presentation</summary>
+ 						<details>
+ 							<summary>Reduces <strong>need for single-use hardware</strong></summary>
  							<p>There is no need to buy hardware for single-use purposes, for example purchasing a pen drive just to store one or two presentations</p>
  						</details>
  					</li>	
 					<li>
-						<details closed>
+						<details>
 							<summary>No need to <strong>purchase a computer system just to run a particular software</strong></summary>
 							<p>Computer users need not give consideration to whether a particular computer model can run the 'essentials' such as the MS Office suite.</p>
 						</details>	
 					</li>	
 					<li>
-						<details closed>
-							<summary><strong>Non-developers</strong> have access to tools like https://slides.com to create presentations </summary>
+						<details>
+							<summary><strong>Non-developers</strong> have access to tools</summary>
 							<p>If you are not a developer you can use https://slides.com to create presentations, which reduces dependency on proprietary software.</p>
 					</li>
 					<li>
-						<details closed>
-							<summary>Stored online so need to worry about <strong>file formats</strong></summary>
+						<details>
+							<summary>No need to worry about <strong>file formats</strong></summary>
 							<p>Standard html extension reduces the stress of figuring out whether the file is stored in the correct format.</p>
 						</details>	
 					</li>
 				<ul>		
 				</section>	
 				<section class="fourteen">
-					<h1><span>RESPONS</span>IVENESS</h1>
+					<h1>RESPONSIVENESS</h1>
 				</section>
 					<section class="fifteen">
 							<ul>
 					<li>
-						<details closed>
-							<summary>Yes your users can get the <strong>full viewing experience</strong> on mobile phones</summary>	
+						<details>
+							<summary><strong>Full viewing experience</strong> on mobile phones</summary>
+								<p>Yes your users can get the full viewing experience on mobile phones</p></summary>	
 						</details>	
 					</li>	
 					<li>
-						<details closed>
-							<summary>Media queries can be used to <strong>stack content correctly</strong> so that floating elements are arranged in full-width blocks</summary>
+						<details>
+							<summary><strong>Stack content correctly</strong></summary>
+							<p>Media queries can be used to <strong>stack content correctly</strong> so that floating elements are arranged in full-width blocks</p>
 						</details>	
 					</li>
  					<li>
- 						<details closed>
- 							<summary><strong>Font size can also be increased</strong> as per device requirements</summary>
+ 						<details>
+ 							<summary><strong>Font size</strong> can also be increased as per device requirements</summary>
+ 							<p>Font size can also be increased as per device requirements</p>
  						</details>
  					</li>	
 					<li>
-						<details closed>
-							<summary>Heavy animations or transitions can be <strong>removed or gradually scaled down</strong> to remove the load on mobile devices</summary>
+						<details>
+							<summary><strong>Scale down</strong> slow loading features</summary>
+							<p>Heavy animations or transitions can be <strong>removed or gradually scaled down</strong> to remove the load on mobile devices</p>
 						</details>	
 					</li>	
 					<li>
-						<details closed>
-						<summary><strong>Images can be appropriately scaled 
-						</strong>so that they do not lose their visual impact</summary>
+						<details>
+						<summary>Scale images<strong> appropriately </strong></summary>
+							<p>Images can be appropriately scaled 
+						</strong>so that they do not lose their visual impact</p>
+					</summary>
 					</li>
 				<ul>	
 				</section>	
 								<section class="sixteen">
-				<h1><span>ATTRACTIVE</span>NESS</h1>	
+				<h1>ATTRACTIVENESS</h1>	
 				</section>	
 				<section class="seventeen">
 				<ul>
 				<li>
 					<details>
-						<summary><strong>Images can easily be controlled</strong> with code so high resolution full-screen options can be tailored for desktops or mobile forms with retina display via media queries
+						<summary><strong>Images can easily be controlled</strong></summary>
+							<p>Code can be added so that high resolution full-screen options can be tailored for desktops or mobile forms with retina display via media queries</p>
 						</summary>
 					</details>
 				</li>
@@ -518,7 +580,11 @@ line-height:1.2rem;
 					</li>
 				<li>
 					<details>	
-					<summary><strong>Existing web templates</strong> which outnumber Powerpoint templates can be <strong>tweaked</strong> to add presentation functionality.</li></summary>
+					<summary><strong>Tweak</strong> existing web templates</summary>
+					<p>Existing web templates which outnumber Powerpoint templates can be tweaked to add presentation functionality.
+					</p>
+				</details>
+				</li>
 					</details>
 				<li>
 					<details>
@@ -527,7 +593,8 @@ line-height:1.2rem;
 				</li>
 				<li>
 					<details>
-						<summary><strong>More flexibility</strong> for animations and gifs. In fact <strong>SVGs</strong> can be used to create seamless user experience using transitions as a starting point, rather than an afterthought.</summary>
+						<summary><strong>More flexibility</strong> for animations and gifs.</summary>
+						 <p>In fact SVGs can be used to create seamless user experience using transitions as a starting point, rather than an afterthought</p>
 					</details>	
 				</li>
 			</ul>	
@@ -537,21 +604,59 @@ line-height:1.2rem;
 			</section>	
 			<section class="nineteen">
 			<ul>
-				<li>Many of us were <strong>taught and trained</strong> in the use of proprietary sofware, including educational institutes and offices. Consequently there is more support and awareness around these technologies.</li>
-				<li><strong>Non-coders may face disadvantages</strong> here though it must be pointed out that training staff members to modify or write in Markup may be easier than training them in proprietary software. There are also WYSIWG tools like https://slides.com to help non-coders.</li>
-				<li>MS Powerpoint has actually achieved <strong>a complex level of functionality</strong> in the form of features over the years and catching up may be more difficult than one would assume.</li>	
+				<li>
+					<details><summary>Many of us were <strong>taught and trained</strong> in the use of proprietary sofware</summary> 
+						<p>This includes educational institutes and offices. Consequently there is more support and awareness around these technologies.</p>
+					</details>
+				</li>
+				<li>
+					<details>
+						<summary><strong>Non-coders</strong> may face disadvantages</summary> 
+				It must be pointed out that training staff members to modify or write in Markup may be easier than training them in proprietary software. There are also WYSIWG tools like https://slides.com to help non-coders.
+					</details>
+			</li>	
+				<li>
+				<details>
+			<summary><strong>Proprietary technology </strong> has first-mover advantage</summary>
+			<p>MS Powerpoint has actually achieved a complex level of functionality</strong> in the form of features over the years and catching up may be more difficult than one would assume.</p>
+					</details>
+				</li>	
 			</ul>	
 			</section>	
+
 			<section class="twenty">
 					<h1>THE NEED</h1>		
 			</section>
+
 			<section class="twentyone">
 			<ul>
-				<li>An emerging tool for <strong>capacity development</strong> particularly for all businesses</li>
-				<li>Today, talented developers do not what to hack proprietary software for single-purpose functionality. <strong>Challenging developers</strong> to build libraries of transition effects or add functionality that will be used by multiple organisations is a more rewarding use of their time and abilities</li>
-				<li>There is a <strong>diversion of labour</strong> into unnecessary and tedious tasks such as formatting.</li> 
-					<li>There is also the dissatisfaction of being associated with <strong>'middlemen' jobs</strong> such as having to merely replicate style and content. Web frameworks can be created side-by-side with web application prototypes, newsletters or social media campaigns. The creative team can tailor different styles and organise content at one go because of the reusability and responsiveness granted by web based open source presentations.</li>
-				<li><strong>Time and energy</strong> is wasted on <strong>tracking down</strong> changes as presentations are typically sent back and forth.</li>
+				<li>
+					<details>
+					<summary>An emerging tool for <strong>capacity development</strong> particularly for all businesses</summary>
+				</details>
+				</li>
+				<li>
+					<details><summary><strong>Challenging developers</strong>to commit to innovative projects</summary>
+						<p>Today, talented developers do not what to hack proprietary software for single-purpose functionality. They can be encourages to build libraries of transition effects or add functionality that will be used by multiple organisations is a more rewarding use of their time and abilities
+						</p>
+						</details>
+					</li>
+				<li>
+					<details>
+					<summary>There is a <strong>diversion of labour</strong> into unnecessary and tedious tasks such as formatting.</summary>
+				</details>
+					</li> 
+					<li>
+						<details>
+							<summary>Dissatisfaction of being associated with <strong>'middlemen' jobs</strong></summary>
+							<p>There is also the dissatisfaction of being associated with <strong>'middlemen' jobs</strong> such as having to merely replicate style and content. Web frameworks can be created side-by-side with web application prototypes, newsletters or social media campaigns. The creative team can tailor different styles and organise content at one go because of the reusability and responsiveness granted by web based open source presentations.
+							</p>
+						</details>	
+						</li>
+				<li>
+					<details>
+						<summary><strong>Time and energy</strong> is wasted on <strong>tracking down</strong> changes as presentations are typically sent back and forth.</summary>
+					</details></li>
 			</ul>	
 			</section>	
 				</div>
