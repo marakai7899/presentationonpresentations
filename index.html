@@ -184,18 +184,29 @@ max-width:100%;
 max-height:50vh;
 }
 
+.reveal ul li {
+list-style-type:none;
+}
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
+.reveal h1 {
+font-size:2.4rem;	
+}
+
+.reveal h4 {
+font-size:1rem;	
+}
+
+}
+
+
+@media only screen and (max-width: 800px) {
 
 .reveal iframe {
 max-width:100%;
 max-height:70vh;
 }	
-
-.reveal ul li {
-list-style-type:none;
-}
 
 .reveal iframe {
 max-width:100%;	
@@ -698,7 +709,7 @@ function myFunction(x) {
 	}
 }
 
-var x = window.matchMedia("(min-width: 700px)")
+var x = window.matchMedia("(min-width: 1000px)")
 myFunction(x) // Call listener function at run time
 x.addListener(myFunction) // Attach listener function on state changes
 </script>
